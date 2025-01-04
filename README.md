@@ -1,3 +1,4 @@
 # Goal Tracker Project
-# Author(s): 
+## Author(s): Tony Sandoval and Osvaldo Venegas
+
 ## Description: 
