@@ -11,9 +11,8 @@ public class Measure {
     private double target;
     private List<Record> records;
 
-    public Measure(String name, int goalId, double baseline, double target, List<Record> records) {
+    public Measure(String name, double baseline, double target, List<Record> records) {
         this.name = name;
-        this.goalId = goalId;
         this.baseline = baseline;
         this.target = target;
         this.records = records;

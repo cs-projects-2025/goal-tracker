@@ -7,9 +7,7 @@ public class Strategy {
     private int goalId;
     private String strategyName;
 
-    public Strategy(int id, int goalId, String strategyName) {
-        this.id = id;
-        this.goalId = goalId;
+    public Strategy(String strategyName) {
         this.strategyName = strategyName;
     }
 

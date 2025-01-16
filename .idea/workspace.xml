@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0494b805-e3ec-44da-816f-b0b2a687640a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Measure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Notes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Record.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Strategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Goal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Goal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GoalDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Measure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Measure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Record.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Strategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Strategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +24,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Goal-Tracker-Project" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="recentBranches">
@@ -42,7 +36,7 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="dev-models" />
-                    <option name="lastUsedInstant" value="1737003390" />
+                    <option name="lastUsedInstant" value="1737044313" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
@@ -60,6 +54,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
   <component name="ProjectId" id="2r9AduaGBvHeioHV7QuKxNLmMtI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -112,6 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1735961007743</updated>
       <workItem from="1735961008891" duration="2611000" />
+      <workItem from="1737043827252" duration="856000" />
     </task>
     <servers />
   </component>
