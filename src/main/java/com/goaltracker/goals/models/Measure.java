@@ -1,7 +1,6 @@
 package com.goaltracker.goals.models;
 
 import jakarta.persistence.*;
-import org.springframework.data.annotation.Id;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

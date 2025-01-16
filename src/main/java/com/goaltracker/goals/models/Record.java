@@ -1,12 +1,13 @@
 package com.goaltracker.goals.models;
 
 import jakarta.persistence.*;
-import org.springframework.data.annotation.Id;
+
 import java.time.LocalDate;
 
 @Entity
 @Table(name = "records")
 public class Record {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
