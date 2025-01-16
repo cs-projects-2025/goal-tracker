@@ -5,13 +5,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Measure {
+    private int id;
     private String name;
     private int goalId;
     private double baseline;
     private double target;
     private List<Record> records;
 
-    public Measure(String name, double baseline, double target, List<Record> records) {
+    public Measure(int id, String name, double baseline, double target, List<Record> records) {
+        this.id = id;
         this.name = name;
         this.baseline = baseline;
         this.target = target;
@@ -24,6 +26,14 @@ public class Measure {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getGoalId() {
@@ -66,7 +76,8 @@ public class Measure {
     @Override
     public String toString() {
         return "Measure{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", goalId=" + goalId +
                 ", baseline=" + baseline +
                 ", target=" + target +
