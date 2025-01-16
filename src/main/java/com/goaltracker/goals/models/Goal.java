@@ -1,5 +1,8 @@
 package com.goaltracker.goals.models;
 
+import jakarta.persistence.*;
+import org.springframework.data.annotation.Id;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,13 +12,26 @@ import java.util.List;
  * a list of strategies and a list of measures.
  * Author: Tony Sandoval
  * */
+
+@Entity
+@Table(name = "goals")
 public class Goal {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @Column(name = "goal_name")
     private String goalName;
     private LocalDate startDate;
     private LocalDate endDate;
+    @OneToMany(mappedBy = "goal", cascade = CascadeType.ALL, orphanRemoval = true)
+
     private List<Strategy> strategies;
+    @OneToMany(mappedBy = "goal", cascade = CascadeType.ALL, orphanRemoval = true)
+
     private List<Measure> measures;
+
+    public Goal() {}
 
     public Goal(String goalName, LocalDate startDate, LocalDate endDate) {
         this.goalName = goalName;

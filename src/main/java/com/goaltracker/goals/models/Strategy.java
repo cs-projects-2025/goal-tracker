@@ -1,11 +1,24 @@
 package com.goaltracker.goals.models;
 
+import jakarta.persistence.*;
+import org.springframework.data.annotation.Id;
+
 import java.util.List;
 
+@Entity
+@Table(name="strategies")
 public class Strategy {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private int goalId;
+    @ManyToOne
+    @JoinColumn(name = "goal_id")
+    private Goal goal;
+    @Column(name = "strategy_name")
     private String strategyName;
+
+    public Strategy() {}
 
     public Strategy(String strategyName) {
         this.strategyName = strategyName;
@@ -19,12 +32,12 @@ public class Strategy {
         this.id = id;
     }
 
-    public int getGoalId() {
-        return goalId;
+    public Goal getGoalId() {
+        return goal;
     }
 
-    public void setGoalId(int goalId) {
-        this.goalId = goalId;
+    public void setGoalId(Goal goalId) {
+        this.goal = goal;
     }
 
     public String getStrategyName() {
@@ -39,7 +52,7 @@ public class Strategy {
     public String toString() {
         return "Strategy{" +
                 "id=" + id +
-                ", goalId=" + goalId +
+                ", goalId=" + goal +
                 ", strategyName='" + strategyName + '\'' +
                 '}';
     }

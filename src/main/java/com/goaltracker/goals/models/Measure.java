@@ -1,23 +1,35 @@
 package com.goaltracker.goals.models;
 
+import jakarta.persistence.*;
+import org.springframework.data.annotation.Id;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
+@Table(name="measures")
 public class Measure {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    private int goalId;
+    @ManyToOne
+    @JoinColumn(name = "goal_id")
+    private Goal goal;
     private double baseline;
     private double target;
+    @OneToMany(mappedBy = "measure", cascade = CascadeType.ALL, orphanRemoval = true)
+
     private List<Record> records;
 
-    public Measure(int id, String name, double baseline, double target, List<Record> records) {
-        this.id = id;
+    public Measure() {}
+
+    public Measure(String name, double baseline, double target) {
         this.name = name;
         this.baseline = baseline;
         this.target = target;
-        this.records = records;
     }
 
     public String getName() {
@@ -36,12 +48,12 @@ public class Measure {
         this.id = id;
     }
 
-    public int getGoalId() {
-        return goalId;
+    public Goal getGoalId() {
+        return goal;
     }
 
-    public void setGoalId(int goalId) {
-        this.goalId = goalId;
+    public void setGoalId(Goal goalId) {
+        this.goal = goal;
     }
 
     public double getBaseline() {
@@ -78,7 +90,7 @@ public class Measure {
         return "Measure{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", goalId=" + goalId +
+                ", goalId=" + goal +
                 ", baseline=" + baseline +
                 ", target=" + target +
                 ", records=" + records +
