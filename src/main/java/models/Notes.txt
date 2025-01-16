@@ -1,0 +1,57 @@
+Notes
+
+A goal has a name, a list of strategies and a list of measures.
+A strategy has a
+Example:
+    Goal: Achieve a healthy and fit lifestyle [ID - #1]
+    Strategies:
+        [1] Loose weight and develop healthy eating habits [Attached to goal ID #1]
+        [ID #1]
+        Key: 1-1
+        [2] Workout at the gym [Attached to goal ID #1]
+        [ID #2]
+        Key: Key 1-2
+    Measures:
+        [1] Calorie deficit, 1500 calories a day [Attached to goal ID #1 and strategy ID #1]
+        Key: 1-1-1
+        [2] Workout a total of 3 times per week [Attached to goal ID #1 and strategy ID #2]
+        Key: 1-2-1
+
+Start by thoroughly defining your data model (Goal, Strategy, Measure, Progress) with their attributes and relationships. This will guide the rest of your development.
+Repository (repository package):
+
+Create the GoalRepository class to handle database interactions.
+Define methods for CRUD operations (create, read, update, delete) on your Goal objects and related entities.
+Implement these methods using SQLite JDBC to interact with your database.
+Service (service package):
+
+Create the GoalService class to implement the core logic of your application.
+Define methods for:
+Adding a new goal with its strategies and measures.
+Retrieving goals and their associated data.
+Updating goal information.
+Recording progress for a goal.
+Calculating progress based on the latest recorded values and target.
+The service methods will use the GoalRepository to interact with the database.
+Controller (controller package):
+
+Create the GoalController class to handle requests from the Vaadin UI.
+Define methods to handle user actions, such as:
+"Add Goal" request: Get the goal details from the UI, create the Goal object, and call the GoalService to save it.
+"View Goals" request: Fetch goals from the GoalService and pass them to the UI for display.
+"Record Progress" request: Get the progress data from the UI, and call the GoalService to store it.
+"View Progress" request: Fetch progress data and calculated progress from the GoalService and pass it to the UI.
+Vaadin UI (ui package):
+
+Create the Vaadin views (MainView, GoalListView, GoalDetailView).
+Design the UI using Vaadin components (buttons, text fields, grids, etc.).
+Implement event listeners to handle user interactions (button clicks, form submissions).
+Connect the UI events to the GoalController methods.
+Testing (test package):
+
+Write unit tests for your repository, service, and controller classes to ensure they function correctly.
+Consider writing integration tests to test the interactions between different components.
+Refinement and Iteration:
+
+Once you have a basic working application, refine the UI, add more features, and improve the user experience.
+Continuously test and iterate on your code to ensure quality and maintainability.

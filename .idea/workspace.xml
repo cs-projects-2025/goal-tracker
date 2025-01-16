@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0494b805-e3ec-44da-816f-b0b2a687640a" name="Changes" comment="">
-      <change afterPath="$USER_HOME$/dev/Goal-Tracker-Project/src/main/java/GoalDriver.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/dev/Goal-Tracker-Project/.idea/workspace.xml" beforeDir="false" afterPath="$USER_HOME$/dev/Goal-Tracker-Project/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/Measure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/Notes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/Record.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/Strategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Goal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Goal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GoalDriver.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +30,32 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/dev/Goal-Tracker-Project" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Goal-Tracker-Project" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="dev-models" />
+                    <option name="lastUsedInstant" value="1737003390" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1736973997" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -41,7 +75,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "dev-models",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,9 +84,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="models" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="GoalDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GoalDriver" />
+    <configuration name="Menu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="models.Menu" />
       <module name="Goal-Tracker-Project" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -60,7 +99,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GoalDriver" />
+        <item itemvalue="Application.Menu" />
       </list>
     </recent_temporary>
   </component>
