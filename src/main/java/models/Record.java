@@ -7,8 +7,7 @@ public class Record {
     private double value;
     private LocalDate date;
 
-    public Record(int id, double value, LocalDate date) {
-        this.id = id;
+    public Record(double value, LocalDate date) {
         this.value = value;
         this.date = date;
     }
